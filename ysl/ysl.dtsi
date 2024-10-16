@@ -2,6 +2,7 @@
 #include "pinctrl.dtsi"
 #include "ysl-pinctrl.dtsi"
 #include "android.dtsi"
+#include "haptic.dtsi"
 #include "cpu.dtsi"
 #include "gpu.dtsi"
 #include "audio.dtsi"

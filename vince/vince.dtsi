@@ -1,0 +1,15 @@
+#include "soc.dtsi" 1
+#include "pinctrl.dtsi" 1
+#include "android.dtsi" 1
+#include "haptic.dtsi" 1
+#include "cpu.dtsi"
+#include "gpu.dtsi"
+#include "audio.dtsi" 1
+#include "battery.dtsi" 1
+#include "vince-qrd.dtsi" 1
+#include "display.dtsi" 1
+#include "fingerprint.dtsi" 1
+#include "power.dtsi" 1
+#include "touchscreen.dtsi" 1
+#include "camera.dtsi" 1
+#include "regulator.dtsi" 1

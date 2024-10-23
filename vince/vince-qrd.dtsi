@@ -1,0 +1,132 @@
+/* msm8953-qrd */
+&soc {
+	i2c@78b6000 { /* BLSP1 QUP3 */
+		aw2013@45 {
+			compatible = "awinic,aw2013_led";
+			reg = <0x45>;
+			vdd-supply = <&pm8953_l10>;
+			vcc-supply = <&pm8953_l5>;
+
+			aw2013,red {
+				aw2013,name = "red";
+				aw2013,id = <0>;
+				aw2013,max-brightness = <255>;
+				aw2013,max-current = <1>;
+				aw2013,rise-time-ms = <3>;
+				aw2013,hold-time-ms = <1>;
+				aw2013,fall-time-ms = <3>;
+				aw2013,off-time-ms = <3>;
+			};
+		};
+
+		aw2023@46 {
+			compatible = "awinic,aw2023_led";
+			reg = <0x46>;
+			vcc-supply = <&pm8953_l5>;
+			vdd-supply = <&pm8953_l10>;
+
+			aw2023,red {
+				aw2023,name = "red";
+				aw2023,id = <0>;
+				aw2023,imax = <2>;
+				aw2023,led-current = <3>;
+				aw2023,max-brightness = <255>;
+				aw2023,rise-time-ms = <6>;
+				aw2023,hold-time-ms = <0>;
+				aw2023,fall-time-ms = <6>;
+				aw2023,off-time-ms = <4>;
+			};
+		};
+	};
+};
+
+&spi_6 {
+	status = "ok";
+	peel_ir@0 {
+		compatible = "peel_ir";
+		reg = <0x0>;
+		spi-max-frequency = <19200000>;
+		vdd-supply = <&pm8953_l8>; //vdd
+		peel_ir,reg-id = "vdd";
+		peel_ir,lr-gpio = <73>;
+		peel_ir,lr-gpio-valid = <0>;
+		peel_ir,spi-bpw = <32>;
+		peel_ir,spi-clk-speed = <960000>;
+		peel_ir,spi-mode = <0>;
+		peel_ir,peel-field = <2345>;
+		status = "ok";
+	};
+};
+
+&spmi_bus {
+	qcom,pmi8950@2 {
+		qcom,leds@a100 {
+			/delete-property/ status;
+			/delete-node/ qcom,led_mpp_2;
+		};
+	};
+	qcom,pm8953@0 {
+		qcom,leds@a100 {
+			status = "okay";
+			compatible = "qcom,leds-qpnp";
+			reg = <0xa100 0x100>;
+			label = "mpp";
+			qcom,led_mpp_2 {
+				label = "mpp";
+				linux,name = "button-backlight";
+				linux,default-trigger = "none";
+				qcom,default-state = "off";
+				qcom,max-current = <10>;
+				qcom,current-setting = <5>;
+				qcom,id = <6>;
+				qcom,mode = "manual";
+				qcom,source-sel = <1>;
+				qcom,mode-ctrl = <0x61>;
+			};
+		};
+	};
+};
+
+&pmi8950_charger {
+	/delete-property/ qcom,chg-led-sw-controls;
+	/delete-property/ qcom,chg-led-support;
+	/delete-property/ qcom,external-typec;
+	/delete-property/ qcom,typec-psy-name;
+	qcom,thermal-mitigation = <3000 2500 2500 2500 1000 1000 0>;
+};
+
+&pmi8950_fg {
+	qcom,thermal-coefficients = [c8 86 c1 50 d3 37];
+	qcom,cold-bat-decidegc = <0>;
+	qcom,cool-bat-decidegc = <150>;
+	qcom,warm-bat-decidegc = <450>;
+};
+
+&sdhc_2 {
+	cd-gpios = <&tlmm 133 0x0>;
+};
+
+&led_flash0{
+	 qcom,flash-source = <&pmi8950_flash0 &pmi8950_flash1>;
+	 qcom,torch-source = <&pmi8950_torch0 &pmi8950_torch1>;
+};
+
+&usb3 {
+	qcom,usbin-vadc = <&pmi8950_vadc>;
+	qcom,detect-dpdm-floating;
+	vbus_dwc3-supply = <&smbcharger_charger_otg>;
+};
+
+&qusb_phy {
+		qcom,qusb-phy-init-seq = <0xF8 0x80
+					0x53 0x84
+					0x93 0x88
+					0xCf 0x8C
+					0x14 0x9C
+					0x30 0x08
+					0x79 0x0C
+					0x21 0x10
+					0x00 0x90
+					0x9F 0x1C
+					0x00 0x18>;
+};

@@ -1,0 +1,9 @@
+/{
+	qrd_batterydata: qcom,battery-data {
+		qcom,batt-id-range-pct = <5>;
+		#include "battery/Vince-sunwoda-40Kohm-4000mah.dtsi"
+		#include "battery/Vince-desay-24Kohm-4000mAh.dtsi"
+		#include "battery/Vince-coslight-50Kohm-4000mah.dtsi"
+		/delete-node/ qcom,qrd_msm8937_sku1_2920mah;
+	};
+};

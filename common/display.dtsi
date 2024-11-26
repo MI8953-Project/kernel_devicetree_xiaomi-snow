@@ -4,18 +4,6 @@
 	};
 };
 
-/* msm8953-mdss-pll */ 
-&soc {
-	mdss_dsi0_pll: qcom,mdss_dsi_pll@994400 {
-		/delete-property/ qcom,dsi-pll-ssc-en;
-		/delete-property/ qcom,dsi-pll-ssc-mode;
-	};
-	mdss_dsi1_pll: qcom,mdss_dsi_pll@996400 {
-		/delete-property/ qcom,dsi-pll-ssc-en;
-		/delete-property/ qcom,dsi-pll-ssc-mode;
-	};
-};
-
 /* msm8953-mdss-panels */
 #include "panel/dsi-panel-td4310-fhdplus-video_e7.dtsi"
 #include "panel/dsi-panel-td4310-fhdplus-video_e7_g55.dtsi"

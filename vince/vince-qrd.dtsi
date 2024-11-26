@@ -102,10 +102,6 @@
 	qcom,warm-bat-decidegc = <450>;
 };
 
-&sdhc_2 {
-	cd-gpios = <&tlmm 133 0x0>;
-};
-
 &led_flash0{
 	 qcom,flash-source = <&pmi8950_flash0 &pmi8950_flash1>;
 	 qcom,torch-source = <&pmi8950_torch0 &pmi8950_torch1>;
@@ -115,18 +111,4 @@
 	qcom,usbin-vadc = <&pmi8950_vadc>;
 	qcom,detect-dpdm-floating;
 	vbus_dwc3-supply = <&smbcharger_charger_otg>;
-};
-
-&qusb_phy {
-		qcom,qusb-phy-init-seq = <0xF8 0x80
-					0x53 0x84
-					0x93 0x88
-					0xCf 0x8C
-					0x14 0x9C
-					0x30 0x08
-					0x79 0x0C
-					0x21 0x10
-					0x00 0x90
-					0x9F 0x1C
-					0x00 0x18>;
 };

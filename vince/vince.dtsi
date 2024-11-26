@@ -1,6 +1,5 @@
 #include "soc.dtsi"
 #include "pinctrl.dtsi"
-#include "haptic.dtsi"
 #include "audio.dtsi" 
 #include "battery.dtsi" 
 #include "vince-qrd.dtsi" 

@@ -1,7 +1,6 @@
 #include "soc.dtsi"
 #include "android.dtsi"
 #include "pinctrl.dtsi"
-#include "misc.dtsi"
 #include "display.dtsi"
 #include "qpnp-haptics.dtsi"
 #include "touchscreen.dtsi"

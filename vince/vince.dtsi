@@ -1,4 +1,3 @@
-#include "soc.dtsi"
 #include "pinctrl.dtsi"
 #include "audio.dtsi" 
 #include "battery.dtsi" 

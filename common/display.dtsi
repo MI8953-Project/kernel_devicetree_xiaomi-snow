@@ -4,7 +4,7 @@
 	};
 };
 
-/* msm8953-mdss-pll */
+/* msm8953-mdss-pll */ 
 &soc {
 	mdss_dsi0_pll: qcom,mdss_dsi_pll@994400 {
 		/delete-property/ qcom,dsi-pll-ssc-en;
@@ -22,6 +22,9 @@
 #include "panel/dsi-panel-td4310-ebbg-fhdplus-video_e7.dtsi"
 #include "panel/dsi-panel-nt36672-tianma-fhdplus-video_e7.dtsi"
 #include "panel/dsi-panel-nt36672-csot-fhdplus-video_e7.dtsi"
+#include "panel/dsi-panel-truly-hd720-video.dtsi"
+#include "panel/dsi-panel-auo-hd720-video.dtsi"
+#include "panel/dsi-panel-shenchao-ili9881c-hd720-video.dtsi" 
 
 &soc {
 	dsi_panel_pwr_supply: dsi_panel_pwr_supply {
@@ -74,3 +77,26 @@
 		25 1e 08 0a 06 03 04 a0];
 };
 
+&dsi_truly_hd720_vid {
+	qcom,mdss-dsi-panel-timings-phy-v2 = [1e 1c 04 06 02 03 04 a0
+		1e 1c 04 06 02 03 04 a0
+		1e 1c 04 06 02 03 04 a0
+		1e 1c 04 06 02 03 04 a0
+		1e 0f 04 05 02 03 04 a0];
+};
+
+&dsi_auo_hd720_vid {
+	qcom,mdss-dsi-panel-timings-phy-v2 = [20 1c 06 07 03 03 04 a0
+         20 1c 06 07 03 03 04 a0
+         20 1c 06 07 03 03 04 a0
+         20 1c 06 07 03 03 04 a0
+         20 13 05 06 03 03 04 a0];
+};
+
+&dsi_sc_ili9881c_hd720_video {
+        qcom,mdss-dsi-panel-timings-phy-v2 = [1f 1c 05 07 03 03 04 a0
+         1f 1c 05 07 03 03 04 a0
+         1f 1c 05 07 03 03 04 a0
+         1f 1c 05 07 03 03 04 a0
+         1f 11 05 06 03 03 04 a0];
+};

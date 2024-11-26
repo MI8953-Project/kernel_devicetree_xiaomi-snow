@@ -22,6 +22,7 @@
 #include "qcom/msm8953-camera-sensor-qrd.dtsi"
 
 #include "vince/vince.dtsi"
+#include "common/common.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. E7 QRD SKU3";

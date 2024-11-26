@@ -10,3 +10,11 @@
 &wcnss_fw_mem {
 	reg = <0x0 0x8e800000 0x0 0x700000>;
 };
+
+/ {
+	aliases {
+		spi3 = &spi_3;
+		spi5 = &spi_5;
+        spi6 = &spi_6;
+	};
+};

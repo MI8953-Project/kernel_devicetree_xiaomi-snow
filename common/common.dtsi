@@ -1,4 +1,5 @@
 #include "android.dtsi"
+#include "pinctrl.dtsi"
 #include "display.dtsi"
 #include "qpnp-haptics.dtsi"
 #include "touchscreen.dtsi"

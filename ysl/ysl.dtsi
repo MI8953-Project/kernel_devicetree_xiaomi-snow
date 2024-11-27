@@ -1,5 +1,4 @@
 #include "pinctrl.dtsi"
-#include "ysl-pinctrl.dtsi"
 #include "cpu.dtsi"
 #include "gpu.dtsi"
 #include "audio.dtsi"

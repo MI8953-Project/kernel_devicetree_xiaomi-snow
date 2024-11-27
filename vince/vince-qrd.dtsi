@@ -87,21 +87,6 @@
 	};
 };
 
-&pmi8950_charger {
-	/delete-property/ qcom,chg-led-sw-controls;
-	/delete-property/ qcom,chg-led-support;
-	/delete-property/ qcom,external-typec;
-	/delete-property/ qcom,typec-psy-name;
-	qcom,thermal-mitigation = <3000 2500 2500 2500 1000 1000 0>;
-};
-
-&pmi8950_fg {
-	qcom,thermal-coefficients = [c8 86 c1 50 d3 37];
-	qcom,cold-bat-decidegc = <0>;
-	qcom,cool-bat-decidegc = <150>;
-	qcom,warm-bat-decidegc = <450>;
-};
-
 &led_flash0{
 	 qcom,flash-source = <&pmi8950_flash0 &pmi8950_flash1>;
 	 qcom,torch-source = <&pmi8950_torch0 &pmi8950_torch1>;

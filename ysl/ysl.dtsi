@@ -5,7 +5,6 @@
 #include "audio.dtsi"
 #include "battery.dtsi"
 #include "misc.dtsi"
-#include "pstore.dtsi"
 #include "fingerprint.dtsi"
 #include "power.dtsi"
 #include "touchscreen.dtsi"

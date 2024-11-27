@@ -37,9 +37,7 @@
 		pins = "gpio33", "gpio39";
 	};
 };
-
-/delete-node/ cam_sensor_rear_vdig1;
-/delete-node/ cam_sensor_rear_vdig_sleep1;	
+	
 &cam_sensor_front_default {
 	mux {
 		pins = "gpio41","gpio132";

@@ -1,3 +1,4 @@
+#include "android.dtsi"
 #include "pinctrl.dtsi"
 #include "vince-qrd.dtsi" 
 #include "power.dtsi"  

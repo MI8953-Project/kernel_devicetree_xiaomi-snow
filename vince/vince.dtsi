@@ -1,6 +1,7 @@
 #include "android.dtsi"
 #include "pinctrl.dtsi"
 #include "camera-pinctrl.dtsi"
+#include "camera.dtsi"
 #include "display.dtsi"
 #include "vince-qrd.dtsi" 
 #include "power.dtsi"  

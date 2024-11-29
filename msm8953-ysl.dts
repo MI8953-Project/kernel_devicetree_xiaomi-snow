@@ -18,8 +18,6 @@
 #include "qcom/msm8953-mtp.dtsi"
 #include "qcom/msm8953-pmi8940.dtsi"
 
-#include "common/fragments/delete-msm8953-camera-sensor-mtp.dtsi"
-
 #include "common/common.dtsi"
 #include "ysl/ysl.dtsi"
 

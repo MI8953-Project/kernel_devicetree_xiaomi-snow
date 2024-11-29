@@ -2,7 +2,6 @@
 #include "pinctrl.dtsi"
 #include "camera-pinctrl.dtsi"
 #include "sdhc.dtsi"
-#include "display.dtsi"
 #include "qpnp-haptics.dtsi"
 #include "touchscreen.dtsi"
 #include "regulator.dtsi"

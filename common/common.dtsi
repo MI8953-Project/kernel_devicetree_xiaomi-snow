@@ -1,5 +1,4 @@
 #include "soc.dtsi"
-#include "android.dtsi"
 #include "pinctrl.dtsi"
 #include "camera-pinctrl.dtsi"
 #include "sdhc.dtsi"

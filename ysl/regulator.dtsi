@@ -1,7 +1,6 @@
 /* msm8917-regulator */
 
 &rpm_bus {
-
        rpm-regulator-ldoa6 {
 		status = "okay";
 		pm8917_l6: regulator-l6 {

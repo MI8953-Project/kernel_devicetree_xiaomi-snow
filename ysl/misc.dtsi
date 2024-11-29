@@ -27,13 +27,7 @@
 		};
 	};
 };
-&soc {
-	sn_fuse: snfuse@a4128 {
-		compatible = "qcom,sn-fuse";
-		reg = <0xA4128 0x4>,
-		      <0xA6034 0x4>;
-		reg-names = "sn-base","fuse-state";
-	};		
+&soc {	
 	ant_check {
 		compatible = "ant_check";
                 pinctrl-names = "ant_check_irq_state";

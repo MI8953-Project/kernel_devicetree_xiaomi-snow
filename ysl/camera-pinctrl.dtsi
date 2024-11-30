@@ -1,0 +1,19 @@
+/* msm8953-pinctrl.dtsi */
+&cam_sensor_rear_vana {
+	mux {
+		pins = "gpio23";
+	};
+
+	config {
+		pins = "gpio23";
+	};
+};
+&cam_sensor_rear_vana_sleep {
+	mux {
+		pins = "gpio23";
+	};
+
+	config {
+		pins = "gpio23";
+	};
+};

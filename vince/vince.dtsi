@@ -4,4 +4,5 @@
 #include "vince-qrd.dtsi" 
 #include "power.dtsi"  
 #include "battery.dtsi"
+#include "touchscreen.dtsi"
 #include "regulator.dtsi"

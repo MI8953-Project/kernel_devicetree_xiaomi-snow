@@ -4,5 +4,4 @@
 #include "battery.dtsi"
 #include "misc.dtsi"
 #include "power.dtsi"
-#include "touchscreen.dtsi"
 #include "regulator.dtsi"

@@ -1,6 +1,5 @@
 #include "soc.dtsi"
 #include "pinctrl.dtsi"
-#include "camera-pinctrl.dtsi"
 #include "sdhc.dtsi"
 #include "qpnp-haptics.dtsi"
 #include "touchscreen.dtsi"

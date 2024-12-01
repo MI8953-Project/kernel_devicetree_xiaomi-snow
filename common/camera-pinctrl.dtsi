@@ -1,3 +1,63 @@
+/* msm8953-pinctrl.dtsi */
+&cam_sensor_rear_vana {
+	mux {
+		pins = "gpio23", "gpio62";
+	};
+
+	config {
+		pins = "gpio23", "gpio62";
+	};
+};
+&cam_sensor_rear_vana_sleep {
+	mux {
+		pins = "gpio23", "gpio62";
+	};
+
+	config {
+		pins = "gpio23", "gpio62";
+	};
+};
+
+&cam_sensor_rear_default {
+	mux {
+		pins = "gpio33", "gpio39";
+	};
+
+	config {
+		pins = "gpio33", "gpio39";
+	};
+};
+
+&cam_sensor_rear_sleep {
+	mux {
+		pins = "gpio33", "gpio39";
+	};
+
+	config {
+		pins = "gpio33", "gpio39";
+	};
+};
+	
+&cam_sensor_front_default {
+	mux {
+		pins = "gpio41","gpio132";
+	};
+
+	config {
+		pins = "gpio41","gpio132";
+	};
+};
+
+&cam_sensor_front_sleep {
+	mux {
+		pins = "gpio41","gpio132";
+	};
+
+	config {
+		pins = "gpio41","gpio132";
+	};
+};
+
 &cam_sensor_front1_default {
 	mux {
 		pins = "gpio129";
@@ -7,7 +67,6 @@
 		pins = "gpio129";
 	};
 };
-
 &cam_sensor_front1_sleep {
 	mux {
 		pins = "gpio129";

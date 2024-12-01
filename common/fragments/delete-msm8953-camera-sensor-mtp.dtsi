@@ -1,8 +1,0 @@
-&soc {
-	/delete-node/ qcom,camera-flash;
-};
-
-&cci {
-	/delete-node/ qcom,eeprom@1;
-	/delete-node/ qcom,camera@1;
-};

@@ -21,8 +21,6 @@
 #include "qcom/msm8953-mdss-panels.dtsi"
 #include "qcom/msm8953-camera-sensor-qrd.dtsi"
 
-#include "common/fragments/delete-msm8953-camera-sensor-qrd.dtsi"
-
 #include "common/common.dtsi"
 #include "vince/vince.dtsi"
 

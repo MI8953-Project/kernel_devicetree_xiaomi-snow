@@ -3,8 +3,6 @@
 	int_codec: sound {
 	status = "ok";
 	qcom,msm-hs-micbias-type = "external";
-	qcom,msm-mbhc-hphl-swh = <1>;
-	qcom,msm-mbhc-gnd-swh = <1>;
 	qcom,msm-micbias1-ext-cap;
 	qcom,msm-micbias2-ext-cap;
 	//qcom,cdc-us-euro-gpios;

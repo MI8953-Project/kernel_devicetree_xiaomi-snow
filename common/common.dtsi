@@ -3,5 +3,6 @@
 #include "camera-pinctrl.dtsi"
 #include "sdhc.dtsi"
 #include "qpnp-haptics.dtsi"
+#include "audio.dtsi"
 #include "display.dtsi"
 #include "regulator.dtsi"

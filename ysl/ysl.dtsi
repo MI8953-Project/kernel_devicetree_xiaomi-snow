@@ -1,3 +1,4 @@
+#include "spi.dtsi"
 #include "android.dtsi"
 #include "pinctrl.dtsi"
 #include "display.dtsi"

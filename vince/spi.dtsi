@@ -1,3 +1,9 @@
+/ {
+	aliases {
+        spi6 = &spi_6;
+	};
+};
+
 &soc {
         spi_6: spi@7af6000 { /* BLSP2 QUP2 */
 		compatible = "qcom,spi-qup-v2";

@@ -68,6 +68,28 @@
 	qcom,platform-reset-gpio = <&tlmm 61 0>;
 };
 
+&dsi_panel_pwr_supply {
+	qcom,panel-supply-entry@2 {
+		reg = <2>;
+		qcom,supply-name = "lab";
+		qcom,supply-min-voltage = <5000000>;
+		qcom,supply-max-voltage = <5000000>;
+		qcom,supply-enable-load = <200>;
+		qcom,supply-disable-load = <0>;
+		qcom,supply-post-on-sleep = <10>;
+		qcom,supply-post-off-sleep = <2>;
+	};
+	qcom,panel-supply-entry@3 {
+		reg = <3>;
+		qcom,supply-name = "ibb";
+		qcom,supply-min-voltage = <5000000>;
+		qcom,supply-max-voltage = <5000000>;
+		qcom,supply-enable-load = <40>;
+		qcom,supply-disable-load = <0>;
+		/*qcom,supply-post-on-sleep = <10>;*/
+	};
+};
+
 &dsi_td4310_fhdplus_e7_vid {
 	qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
 };

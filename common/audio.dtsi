@@ -14,6 +14,7 @@
 			"AMIC2", "MIC BIAS Internal2",
 			"AMIC3", "MIC BIAS External";
 	};
+};
 
 &int_codec {
 	/delete-property/asoc-wsa-codec-names;
